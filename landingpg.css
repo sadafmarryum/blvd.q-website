@@ -1,0 +1,654 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.S1-child-container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* border: 6px solid rgb(128, 7, 19); */
+}
+.S1-child-container img{
+    width: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.back-container-blue {
+    background-color: rgb(34, 52, 110);
+    width: 10%;
+  }
+  .back-container-pink {
+    background-color: rgb(210, 28, 103);
+    width: 10%;
+  }
+  .layer {
+    opacity: 0.9;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+  }
+.S1-main-content-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.S1-content-container{
+    width: 50%;
+    color: white;
+    margin-left: 5rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.S1-BLVD-logo{
+    display: flex;
+    height: 75px;
+    margin-bottom: 20px;
+}
+.verticle-line {
+    border-left: 1px solid white;
+    position: relative;
+    height: 45px;
+    left: 20px;
+    top: 8px;
+  }
+.S1 h{
+    max-width: 300px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.S1-content-container h2{
+    font-weight: 700;
+    max-width: 330px;
+    font-size: 1.8rem;
+}
+.S1 p{
+    font-size: 12px;
+    max-width: 150px;
+    min-width: 145px;
+    text-transform: uppercase;
+    letter-spacing: 5px ;
+    padding-left: 2rem;
+}
+.S1 button{
+    color: white;
+    margin-top: 2rem;
+    width: 135px;
+    height: 40px;
+    background-color: rgb(209, 28, 103);
+    border-radius: 5px;
+    border: none;
+}
+.S1-img-container{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+}
+.S1-img-container img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center; 
+}
+/* section-2 */
+.S2-parent-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.S2 h2, .S3 h2, .S4 h2, .S6 h2{
+    border-bottom: 4px solid rgb(95, 42, 42);
+    margin: 2rem 0rem;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    width: fit-content;
+}
+.S5 h2{
+    border-bottom: 4px solid rgb(95, 42, 42);
+    margin-top: 1.5rem ;
+    margin-bottom: 0.8rem;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    color: white;
+    width: fit-content;
+}
+.S2-treasures-cards{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.S2 .card{
+    width: 22%;
+    height: 280px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+.S2-card-1{
+    background-image: url(/pics/S2/S2-img-1.jpeg);
+}
+.S2-card-2{
+    background-image: url(/pics/S2/S2-img-2.jpeg);
+}
+.S2-card-3{
+    background-image: url(/pics/S2/S2-img-3.jpeg);
+}
+.S2-card-4{
+    background-image: url(/pics/S2/S2-img-4.jpeg);
+}
+.S2 .content{
+    width: 100%;
+    color: white;
+    text-transform:uppercase;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    height: 40px;
+}
+.S2-content-1, .S2-content-2 ,.S2-content-3, .S2-content-4 {
+    background-color: rgb(33, 52, 110);
+    opacity: 0.8;
+}
+/* S2-elegence */
+.elegant-parent-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .elegant-content-container {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .elegant-living-space h2{
+    width: fit-content;
+    border-bottom: 4px solid rgb(95, 42, 42);
+    margin: 2rem 0rem;
+    padding-bottom: 5px;
+    border-radius: 4px;
+   
+  }
+
+  .elegant-list-image-container {
+    width: 100%;
+    display: flex;
+    column-gap: 1rem;
+  }
+  .elegant-list-wrapper {
+    width: 50%;
+    display: flex;
+  }
+  .elegant-list-icon-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .elegant-list-icon-wrapper img {
+    width: 28px;
+    height: 27px;
+  }
+  .elegant-list-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    row-gap: 1rem;
+  }
+  .elegant-list-wrapper ul li {
+    max-width: 480px;
+    padding-left: 8px;
+    /* line-height: 20px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .elegant-list-wrapper ul li h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  .elegant-list-wrapper ul span {
+    font-weight: 700;
+  }
+  .elegant-img-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  .elegant-img-left {
+    width: 50%;
+  }
+  .elegant-img-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    object-fit: cover;
+  
+  }
+  .elegant-img-left img {
+    height: 380px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  .elegant-img-right img {
+    width: 100%;
+    height: 214px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+ 
+  
+/* section-3 */
+.S3-parent-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e5ec;
+    transform: rotate(-2deg); 
+    overflow: hidden;
+}
+.S3-investment-cards{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 3rem;
+    transform: rotate(2deg); 
+    
+}
+.S3 h2{
+    transform: rotate(2deg);
+}
+.S3 .card{
+    width: 33%;
+   background-color: rgb(33, 52, 110);
+   color: white;
+   border-radius: 15px;
+  
+}
+.S3 .content{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 1.5rem 1rem;
+    text-transform: uppercase;
+}
+.S3 h{
+    font-size: 2rem;
+    text-align: center;
+}
+.S3 p{
+    margin-top: 0.8rem ;
+    font-size: 14px;
+    max-width: 250px;
+}
+/* section-4 */
+.S4-parent-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.S4-vedio-container{
+    margin-bottom: 2rem;  
+}
+.S4-vedio-container video{
+    width: 100%;
+    height: 500px;
+}
+/* section-5*/
+.S5-parent-container{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/pics/S6/right-top.jpeg);
+    background-size: cover;
+    background-position: center ; 
+}
+
+.S5-child-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+} 
+.S5-form-container{
+    width: 45%;
+    background-color: rgb(33, 52, 110);
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0rem;
+   
+}
+.S5-form-content{
+    width: 90%;
+    border: 4px solid white;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.6rem 0rem;
+    padding-left: 1rem;
+}
+.input-box{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-bottom: 0.6rem; */
+}
+.input-box label{
+    margin: 0.6rem 0rem;
+}
+.input-box input{
+    height: 40px;
+    width: 90%;
+}
+.check-field input , textarea{
+    margin: 0.6rem 0rem;
+}
+.S5 button{
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    margin: 1.8rem 0rem;
+    text-transform: uppercase;
+    color: rgb(209, 28, 103);
+}
+/* section-6 */
+.S6-parent-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.S6-child-container{
+    width: 80%;
+    display: flex;
+    margin: 3rem 0rem;
+    justify-content: center;
+    align-items: center;
+}
+.S6-img-container{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+}
+.S6-content-container{
+    max-width: 590px;
+}
+.S6 img{
+    width: 70%;
+    float: right;
+}
+.S6 h4{
+    color:rgb(209, 28, 103);
+    padding-bottom: 0.8rem;
+}
+/* footer */
+.Footer-parent-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.Footer-content-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.BLVD-description{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+}
+.BLVD-info{
+    display: flex;
+    column-gap: 2rem;
+}
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.5rem;
+}
+.info-container h4{
+    padding: 0.5rem 0rem; 
+}
+.BLVD-logo img{
+    width: 100%;
+    height: 90px;
+}
+.BLVD-info img{
+    height: 30px;
+}
+.Footer-content-container p{
+    text-align: center;
+    text-transform: uppercase;
+}
+.Footer-content-container h5{
+    padding: 0.8rem 0rem;
+}
+.Footer-content-container span{
+    color:rgb(209, 28, 103);
+}
+
+
+
+@media screen and (max-width:991px) {
+ 
+    .S1-content-container {
+        margin-left: 2rem;
+      }
+      .S1-content-container h3 {
+        max-width: 330px;
+      }
+    .S2-treasures-cards{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    .S2 .card{
+        width: 48%; 
+    }
+    .S2-living-space{
+        width: 95%;
+    }
+    .check-field textarea{
+        width: 95%;
+    }
+    .S3 p{
+        max-width: 160px;
+    }
+    .S4-vedio-container {
+        width: 80%;   
+    }
+    .S6-child-container{
+        column-gap: 25px;
+    }
+    .S6-content-container{
+        width: 70%;
+    }
+    .S6 img{
+        float: left;
+    }
+    .S6 h4{
+        font-size: 1.2rem;
+    }   
+}
+@media screen and (max-width:767px) {
+    .S1-content-container{
+        width: 70%;  
+    }
+    .S1-img-container {
+      display: none;
+    }
+  
+    .elegant-list-image-container {
+        flex-wrap: wrap;
+        row-gap: 3rem;
+      }
+      .elegant-list-wrapper,.elegant-img-container {
+        width: 100%;
+      }
+      .elegant-list-wrapper ul li h1 {
+        font-size: 1.1rem;
+      }
+    .S3-investment-cards{
+        width: 90%;   
+    }
+    .S3 .card{
+        width: 42%;
+    }
+    .S3 p{
+        max-width: 145px;
+    }
+    .S5-form-container{
+        width: 95%;
+    }
+    .S6-child-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .S6-img-container{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:576px) {
+    .back-container-blue , .back-container-pink {
+        display: none;
+        }
+        .S1-child-container img,.layer {
+            width: 100%;
+          }
+         .S1-content-container {
+            width: 100%;
+            margin-left: 2rem;
+          }
+          .S1 h{
+            font-size: 1.1rem;
+        }
+        .S1-content-container h2{
+            font-size: 1.5rem;
+        }
+        .S1 p{
+            font-size: 10px;
+        }
+       
+        .S2-treasures-cards{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5rem;
+        }
+        .S2 .card{
+            width: 95%;
+        }
+        .S2 h2, .S3 h2, .S4 h2, .S6 h2, .S5 h2,  .elegant-living-space h2{
+            font-size: 1.3rem;
+        }
+        .elegant-img-container {
+            row-gap: 1rem;
+            flex-direction: column;
+          }
+          .elegant-img-left,.elegant-img-right {
+            width: 100%;
+          }
+          .elegant-living-space p {
+            font-size: 1.5rem;
+          }
+          .elegant-list-wrapper ul li h1 {
+            font-size: 1rem;
+          }
+          .elegant-img-left img {
+            height: 300px;
+          }
+         .S3-investment-cards{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.8rem;
+         }
+         .S3 .card{
+            width: 90%;
+         }
+         .S3 p{
+            max-width: 360px;
+        }
+        .S3 .content{
+            margin: 1.5rem 1rem ;
+        }
+        .S5-form-content{
+            display: flex;
+            flex-direction: column;   
+        }
+        .input-box{
+            width: 95%;
+        }
+        .check-field textarea{
+            width: 85%;
+        }
+        .S5 button{
+            padding: 0.9rem 1.2rem;
+        }
+        .S6-child-container{
+            width: 85%;
+        }
+        .S6-img-container{
+            width: 80%;
+        }
+        .S6-content-container{
+            width: 100%;
+        }
+        .BLVD-description{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+}
